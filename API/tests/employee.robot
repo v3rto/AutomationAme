@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    C:/Users/Everton Santos/Documents/Robot/AmeDigitalTest/API/resources/support/index.robot
+Resource    C:/Users/Everton Santos/Documents/Robot/AutomationAme/API/resources/support/index.robot
 Force Tags  employee
 #Suite Setup               
 #Test Setup      

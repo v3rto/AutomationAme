@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    C:/Users/Everton Santos/Documents/Robot/AmeDigitalTest/API/resources/support/index.robot
+Resource    C:/Users/Everton Santos/Documents/Robot/AutomationAme/API/resources/support/index.robot
 
 
 *** Variables ***
@@ -15,7 +15,7 @@ Quando realizar um POST para cadastrar um novo employee
     Create Session  ${SESSION}      ${HOST} headers=${HEADER_JSON} verify=false disable_warnings=1
     ${json_obj}     Load JSON From File      ${JSON_CREATE_EMPLOYEE}
     ${json_obj}     Update Value To Json     ${json_obj}     $.name       ${employee_name}
-    debug
+
     ${RESPONSE}     POST Request     ${SESSION}     ${CREATE_EMPLOYEE_ENDPOINT}    data=${json_obj} headers=${HEADER_JSON}
 
     ${ID_EMPLOYEE}      Get Value From JSON     ${RESPONSE.json()}      $.data.id

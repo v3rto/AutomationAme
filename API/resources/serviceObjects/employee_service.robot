@@ -6,4 +6,4 @@ ${DELETE_EMPLOYEE_ENDPOINT}     /delete/                #Delete an employee reco
 
 ### PAYLOAD PATH
 
-${JSON_CREATE_EMPLOYEE}         C:/Users/Everton Santos/Documents/Robot/AmeDigitalTest/API/resources/support/payload/create_employee.json
+${JSON_CREATE_EMPLOYEE}         C:/Users/Everton Santos/Documents/Robot/AutomationAme/API/resources/support/payload/create_employee.json
