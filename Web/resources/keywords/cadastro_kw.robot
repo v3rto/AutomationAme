@@ -29,7 +29,6 @@ E informo todos os campos obrigatórios
     Enter password      ${PASS}
     Enter address       ${address} 
     Enter city          ${city}
-    Debug
     Select state option     ${state}                #Alabama 
     Enter postcode          ${postcode}   #35005
     Enter mobile phone     +5511957999902
