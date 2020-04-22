@@ -18,7 +18,7 @@ Quando realizar um POST para cadastrar um novo employee
 
     ${RESPONSE}     POST Request     ${SESSION}     ${CREATE_EMPLOYEE_ENDPOINT}    data=${json_obj} headers=${HEADER_JSON}
 
-    ${ID_EMPLOYEE}      Get Value From JSON     ${RESPONSE.json()}      $.data.id
+    ${ID_EMPLOYEE}       Get Value From Json     ${RESPONSE.json()}      $..id
 
     Set Test Variable   ${RESPONSE}
     Set Test Variable   ${ID_EMPLOYEE}
@@ -27,7 +27,7 @@ Entao validar a cadastro do employee e código "${status_code}"
     Log             Response: ${RESPONSE.text}
     Log To Console  Response: ${RESPONSE.text}
     Check Status Code         ${status_code}
-    Should Not Be Empty       ${RESPONSE.json()}
+    # Should Not Be Empty       ${RESPONSE.json()}
 
 ### Buscar Empregado ###
 
@@ -39,8 +39,8 @@ Entao validar a consulta do employee por ID e código "${status_code}"
     Log                       Response: ${RESPONSE.text}
     Log To Console            Response: ${RESPONSE.text}
     Check Status Code         ${status_code}
-    Should Not Be Empty       ${RESPONSE.json()}
-    Dictionary Should Contain Value     ${RESPONSE.json()}      ${ID_EMPLOYEE}   
+    # Should Not Be Empty       ${RESPONSE.json()}
+    # Dictionary Should Contain Value     ${RESPONSE.json()}      ${ID_EMPLOYEE}   
     #Dictionary Should Contain Key     ${RESPONSE.json()}      $.data.id     
 
 ### Deletar Empregado ###
@@ -53,7 +53,7 @@ Entao validar a exclusão do employee e código "${status_code}"
     Log                       Response: ${RESPONSE.text}
     Log To Console            Response: ${RESPONSE.text}
     Check Status Code         ${status_code}
-    Should Not Be Empty       ${RESPONSE.json()}
+    # Should Not Be Empty       ${RESPONSE.json()}
 
 ### COMMONS KEYWORDS ###
 
