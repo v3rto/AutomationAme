@@ -1,0 +1,4 @@
+robotframework==3.1.2
+robotframework-debuglibrary==1.1.4
+robotframework-appiumlibrary
+robotframework-yamllibrary
