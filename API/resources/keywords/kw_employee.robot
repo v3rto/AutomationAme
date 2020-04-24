@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    C:/Users/Everton Santos/Documents/Robot/AutomationAme/API/resources/support/index.robot
+Resource    ./../support/index.robot
 
 
 *** Variables ***
