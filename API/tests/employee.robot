@@ -10,7 +10,7 @@ Force Tags  employee
 Scenario: Cadastrar Empregado
     [Tags]  create_employee
     Quando realizar um POST para cadastrar um novo employee
-    Entao validar a cadastro do employee e código "201"
+    Entao validar a cadastro do employee e código "200"
 
 Scenario: Buscar Empregado
     [Tags]  consult_employee
