@@ -2,18 +2,16 @@
 Resource  ./../resources/support/index.robot
 Force Tags  produto
 # Suit Setup
-Test Setup     Run keywords  Start Chrome                                 AND
-...                       Maximize Browser Window                         AND
-...                       Dado que tenha acessado o apk product
+Test Setup     Open Application ${REMOTE_URL} platformName=${PLATFORM_NAME} platformVersion=${PLATFORM_VERSION} deviceName=${DEVICE_NAME} app=${APP} automationName=${AUTOMATION_NAME} appPackage=${APP_PACKAGE}
 # Suit Teardown
-Test Teardown   Close Browser
+Test Teardown   Close Application
 
 *** Test Cases ***
 
 Scenario: Criando um novo produto
    [Tags]  new_product
    Quando clico em New
-   E informo todos os campos obrigatórios
+   E informo todos os campos obrigatórios 
    Então clico em Save
    E meu porduto é criado com sucesso
 

@@ -5,7 +5,6 @@ Force Tags  employee
 #Test Setup      
 #Test Teardown         
 
-
 *** Test Cases ***
 
 Scenario: Cadastrar Empregado

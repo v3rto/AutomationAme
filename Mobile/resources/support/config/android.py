@@ -1,0 +1,7 @@
+REMOTE_URL=     "http://localhost:4723/wd/hub"
+PLATFORM_NAME=      "Android"
+PLATFORM_VERSION=   "10.0"
+DEVICE_NAME=    "Android Emulator"
+APP=    "C:/Users/Everton Santos/Documents/Robot/AutomationAme/Mobile/apk/product_registration.apk"
+APP_PACKAGE=    "com.example.android.contactmanager"
+AUTOMATION_NAME=    "appium"

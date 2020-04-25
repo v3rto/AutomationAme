@@ -1,0 +1,6 @@
+elements:
+ btn_add_contact: "accessibility_id=Add Contact"
+ contact_name: "accessibility_id=Contact Name"
+ contact_phone: "accessibility_id=Contact Phone"
+ contact_email: "accessibility_id=Contact Email"
+ btn_save: "accessibility_id=Save"

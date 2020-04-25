@@ -2,7 +2,7 @@
  
 ## Instalar
  
-- Primeiramente instale python na sua máquina.
+- Primeiramente instale python na sua máquina
  URL:https://www.python.org/
  
 rode o comando dentro do projeto: pip3 install -r requirements.txt para instalar as dependências
