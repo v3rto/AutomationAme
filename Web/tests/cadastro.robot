@@ -6,7 +6,8 @@ Test Setup     Run keywords  Start Chrome                                 AND
 ...                       Maximize Browser Window                         AND
 ...                       Dado que tenha acessado a tela de Login
 # Suit Teardown
-Test Teardown   Close Browser
+Test Teardown    Run keywords    Capture Page Screenshot                            AND
+...                         Close Browser
 
 *** Test Cases ***
 
